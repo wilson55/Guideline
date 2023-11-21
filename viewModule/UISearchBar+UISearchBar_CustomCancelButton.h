@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UISearchBar (UISearchBar_CustomCancelButton)
+- (void)changeCustomCancelButton;
 
 @end
 

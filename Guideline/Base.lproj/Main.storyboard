@@ -1,24 +1,511 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Bp-XW-pPq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="朋友_KOKO 好友_New Comer.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBT-Re-Wpy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qIx-np-0nu" userLabel="客戶基本資料區">
+                                <rect key="frame" x="0.0" y="123" width="414" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OsE-Ua-mgk" customClass="CircularImageView">
+                                        <rect key="frame" x="322" y="23" width="60" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOO-Ay-z70" userLabel="KOKO Name">
+                                        <rect key="frame" x="32" y="23" width="219" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.27843138579999999" green="0.27843138579999999" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC7-6o-jwI" userLabel="KOKO ID">
+                                        <rect key="frame" x="160" y="60" width="128" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="30001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-oM-Y7F">
+                                        <rect key="frame" x="18" y="110" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="好友" subtitle="" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="friendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZV-c9-wOJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0X-Vg-6Pj">
+                                        <rect key="frame" x="86" y="110" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="聊天" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="chatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc8-pj-PGM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwf-H0-PM4">
+                                        <rect key="frame" x="40" y="142" width="20" height="6"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB7-hs-vG1">
+                                <rect key="frame" x="98" y="653" width="216" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="加好友">
+                                    <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="senderbuttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wW3-wD-3ty"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabelBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="RlT-Qe-VwJ">
+                                <rect key="frame" x="0.0" y="775" width="414" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="無好友界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLT-A2-hDK">
+                                <rect key="frame" x="128" y="92" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nlq-Gc-dSO"/>
+                    <connections>
+                        <outlet property="addFriends" destination="aB7-hs-vG1" id="tnT-mq-x9K"/>
+                        <outlet property="chatButton" destination="S0X-Vg-6Pj" id="FNb-wq-ftL"/>
+                        <outlet property="customerId" destination="XC7-6o-jwI" id="JnA-qW-R3m"/>
+                        <outlet property="customerImage" destination="OsE-Ua-mgk" id="3rR-5T-Uig"/>
+                        <outlet property="customerName" destination="zOO-Ay-z70" id="zyk-sk-UcR"/>
+                        <outlet property="frientsButton" destination="Sr0-oM-Y7F" id="pUe-4K-yPu"/>
+                        <outlet property="operation" destination="Cwf-H0-PM4" id="pQo-I4-9dZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="455" y="120"/>
+        </scene>
+        <!--Friend List View Controller-->
+        <scene sceneID="OBg-vg-oUE">
+            <objects>
+                <viewController storyboardIdentifier="FriendListViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yNQ-ez-YOn" customClass="FriendListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w7T-p4-jbt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="朋友_KOKO 好友_邀請展開.png" translatesAutoresizingMaskIntoConstraints="NO" id="TmD-0P-2ok">
+                                <rect key="frame" x="0.0" y="-100" width="414" height="987"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-n8-DOa" userLabel="客戶基本資料區">
+                                <rect key="frame" x="0.0" y="94" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-e6-U5i" userLabel="好友列表邀請">
+                                        <rect key="frame" x="78" y="13" width="236" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="好友列表含邀請好友_2_3"/>
+                                        <connections>
+                                            <action selector="changeFriendList:" destination="yNQ-ez-YOn" eventType="touchUpInside" id="waL-6p-auy"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVS-2U-rWL" customClass="CircularImageView">
+                                        <rect key="frame" x="322" y="22" width="61" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRM-EJ-9TD">
+                                        <rect key="frame" x="30" y="24" width="219" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.27843138579999999" green="0.27843138579999999" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSC-Oh-5HI">
+                                        <rect key="frame" x="99" y="55" width="82" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <color key="textColor" red="0.27843138579999999" green="0.27843138579999999" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" tag="20002" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-Rt-wCi" userLabel="好友邀請中列表">
+                                        <rect key="frame" x="0.0" y="112" width="414" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="yNQ-ez-YOn" id="AeI-jg-rSW"/>
+                                            <outlet property="delegate" destination="yNQ-ez-YOn" id="IQP-q6-ddw"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" tag="30001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1g-dO-rDC">
+                                        <rect key="frame" x="18" y="105" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="好友">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="friendButtonTapped:" destination="yNQ-ez-YOn" eventType="touchUpInside" id="UUN-fQ-KID"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R07-JV-Gpv">
+                                        <rect key="frame" x="86" y="105" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="聊天">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="chatButtonTapped:" destination="yNQ-ez-YOn" eventType="touchUpInside" id="bAF-mI-9jD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqq-n1-beE">
+                                        <rect key="frame" x="40" y="139" width="20" height="4"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QfK-vR-jvQ" userLabel="轉一筆給誰">
+                                <rect key="frame" x="0.0" y="243" width="414" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="想轉一筆給誰呢？" translatesAutoresizingMaskIntoConstraints="NO" id="Wp7-3l-b1G">
+                                        <rect key="frame" x="21" y="10" width="322" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="yNQ-ez-YOn" id="hjb-V0-fx9"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVi-fQ-TRC">
+                                        <rect key="frame" x="349" y="9" width="35" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="icBtnAddFriends"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" tag="20001" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="RAi-rU-SW5" userLabel="好友列表">
+                                <rect key="frame" x="0.0" y="364" width="414" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.92549019610000005" green="0.0" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yNQ-ez-YOn" id="XlG-ev-BdZ"/>
+                                    <outlet property="delegate" destination="yNQ-ez-YOn" id="V1g-0d-sK5"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabelBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="rXi-mj-Rsc">
+                                <rect key="frame" x="0.0" y="775" width="414" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VQF-7k-gll"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FSH-QO-0wO"/>
+                    <connections>
+                        <outlet property="changeScene" destination="ccS-e6-U5i" id="Che-gz-9VJ"/>
+                        <outlet property="chatButton" destination="R07-JV-Gpv" id="IaX-fG-Bug"/>
+                        <outlet property="customerId" destination="lSC-Oh-5HI" id="ImY-Mr-HDo"/>
+                        <outlet property="customerImage" destination="HVS-2U-rWL" id="iZK-Uy-SCO"/>
+                        <outlet property="customerName" destination="oRM-EJ-9TD" id="QfL-Sm-8KU"/>
+                        <outlet property="customerView" destination="5ci-n8-DOa" id="Lew-CI-qNk"/>
+                        <outlet property="frientsButton" destination="O1g-dO-rDC" id="Xn0-fc-VGv"/>
+                        <outlet property="inviteTableView" destination="lDb-Rt-wCi" id="GYq-rv-oDg"/>
+                        <outlet property="operation" destination="cqq-n1-beE" id="c04-Gh-MnR"/>
+                        <outlet property="searchBar" destination="Wp7-3l-b1G" id="Lg7-7b-0q2"/>
+                        <outlet property="searchBarView" destination="QfK-vR-jvQ" id="aqI-rD-AQi"/>
+                        <outlet property="tableView" destination="RAi-rU-SW5" id="6OO-gf-E62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CX7-XJ-N4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="771"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JEp-Bm-OWt">
+            <objects>
+                <tabBarController id="9Bp-XW-pPq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gch-sa-hgI"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MsR-xs-6Gv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hpO-LD-CN5" kind="relationship" relationship="viewControllers" id="T5e-SP-EEf"/>
+                        <segue destination="2ul-Of-KvL" kind="relationship" relationship="viewControllers" id="9sW-ng-6wb"/>
+                        <segue destination="QLd-Yv-rHd" kind="relationship" relationship="viewControllers" id="4Q3-kP-Ga5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsZ-lA-Apt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1346" y="465"/>
+        </scene>
+        <!--無好友-->
+        <scene sceneID="5LP-IX-AEN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hpO-LD-CN5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="無好友" id="Z4m-SN-aVX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tk2-dK-Hxc">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wiF-co-x2q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lY-gv-tJE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="120"/>
+        </scene>
+        <!--好友_邀請-->
+        <scene sceneID="Oxi-8o-VmW">
+            <objects>
+                <navigationController id="QLd-Yv-rHd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="好友_邀請" id="PSF-wf-8b5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QsL-fL-d5m">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Hn-ez-07c" kind="relationship" relationship="rootViewController" id="W14-b5-nFb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyJ-Gp-xRs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="1463"/>
+        </scene>
+        <!--Merge Friend List View Controller-->
+        <scene sceneID="t2u-m5-zl2">
+            <objects>
+                <viewController id="8Hn-ez-07c" customClass="MergeFriendListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ISM-nJ-FWm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="朋友_KOKO 好友_邀請展開.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z5X-Em-RCr">
+                                <rect key="frame" x="0.0" y="-46" width="414" height="987"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUg-5A-dsf" userLabel="客戶基本資料區">
+                                <rect key="frame" x="0.0" y="94" width="414" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk2-x5-l14" userLabel="好友列表邀請">
+                                        <rect key="frame" x="78" y="13" width="236" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="好友列表含邀請好友"/>
+                                        <connections>
+                                            <action selector="changeFriendList:" destination="8Hn-ez-07c" eventType="touchUpInside" id="jYl-9o-aCx"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDo-wR-o2f" customClass="CircularImageView">
+                                        <rect key="frame" x="322" y="22" width="61" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rJ-Vg-PSK">
+                                        <rect key="frame" x="30" y="24" width="219" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.27843138579999999" green="0.27843138579999999" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3B-EF-zfo">
+                                        <rect key="frame" x="99" y="55" width="82" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="13"/>
+                                        <color key="textColor" red="0.27843138579999999" green="0.27843138579999999" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" tag="20002" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="y9K-Si-Mw8" userLabel="好友邀請中列表">
+                                        <rect key="frame" x="0.0" y="112" width="414" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="8Hn-ez-07c" id="Ji7-HN-5qv"/>
+                                            <outlet property="delegate" destination="8Hn-ez-07c" id="2bl-5X-gPU"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" tag="30001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgI-vM-WXo">
+                                        <rect key="frame" x="18" y="105" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="好友">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="friendButtonTapped:" destination="8Hn-ez-07c" eventType="touchUpInside" id="yIo-u5-hd1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-lR-yL5">
+                                        <rect key="frame" x="86" y="105" width="63" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.2784313725" green="0.2784313725" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="聊天">
+                                            <fontDescription key="titleFontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="13"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="chatButtonTapped:" destination="8Hn-ez-07c" eventType="touchUpInside" id="Erb-MJ-s2t"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb7-me-YzJ">
+                                        <rect key="frame" x="40" y="139" width="20" height="4"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPo-Fp-dUd" userLabel="轉一筆給誰">
+                                <rect key="frame" x="0.0" y="243" width="414" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="想轉一筆給誰呢？" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-1h-RWD">
+                                        <rect key="frame" x="21" y="10" width="322" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="8Hn-ez-07c" id="9Ch-lO-UXS"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07i-bS-xf2">
+                                        <rect key="frame" x="349" y="9" width="35" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="icBtnAddFriends"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" tag="20001" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ZMn-8n-fme" userLabel="好友列表">
+                                <rect key="frame" x="0.0" y="364" width="414" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.92549019610000005" green="0.0" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Hn-ez-07c" id="yGO-hv-HcS"/>
+                                    <outlet property="delegate" destination="8Hn-ez-07c" id="3KA-YX-PdH"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabelBar.png" translatesAutoresizingMaskIntoConstraints="NO" id="jil-Mp-iYz">
+                                <rect key="frame" x="0.0" y="775" width="414" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VSz-kg-qjG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HPo-Ne-mMN"/>
+                    <connections>
+                        <outlet property="changeScene" destination="Fk2-x5-l14" id="uIn-Y1-BNy"/>
+                        <outlet property="chatButton" destination="RMn-lR-yL5" id="zO0-Du-IoA"/>
+                        <outlet property="customerId" destination="R3B-EF-zfo" id="Cke-Mh-3DW"/>
+                        <outlet property="customerImage" destination="bDo-wR-o2f" id="uZ5-Ow-9Sg"/>
+                        <outlet property="customerName" destination="5rJ-Vg-PSK" id="HNv-zJ-8oj"/>
+                        <outlet property="frientsButton" destination="QgI-vM-WXo" id="c8C-CV-Vmd"/>
+                        <outlet property="inviteTableView" destination="y9K-Si-Mw8" id="b3g-le-4Xi"/>
+                        <outlet property="operation" destination="cb7-me-YzJ" id="hYI-hr-bkq"/>
+                        <outlet property="searchBar" destination="mdS-1h-RWD" id="ABL-AM-aCc"/>
+                        <outlet property="searchBarView" destination="XPo-Fp-dUd" id="r6W-gb-N2t"/>
+                        <outlet property="tableView" destination="ZMn-8n-fme" id="64q-f0-oSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbf-6o-loH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="1463"/>
+        </scene>
+        <!--好友列表-->
+        <scene sceneID="r8Y-rI-YBE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ul-Of-KvL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="好友列表" id="bv7-9R-COm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KuL-AS-XRe">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yNQ-ez-YOn" kind="relationship" relationship="rootViewController" id="Elp-OM-yT1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNp-z6-kiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="744"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icBtnAddFriends" width="25" height="25"/>
+        <image name="tabelBar.png" width="194.5" height="34"/>
+        <image name="朋友_KOKO 好友_New Comer.png" width="750" height="1410"/>
+        <image name="朋友_KOKO 好友_邀請展開.png" width="750" height="1334"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

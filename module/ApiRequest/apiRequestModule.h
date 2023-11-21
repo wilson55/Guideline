@@ -10,7 +10,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface apiRequestModule : NSObject
++ (void)fetchDataFromAPIWithCompletion:(void (^)(NSDictionary *responseData, NSError *error))completion;
 
++ (void)fetchDataFromAPIWithURL:(NSURL *)apiUrl completion:(void (^)(NSDictionary *responseData, NSError *error))completion;
+
++ (void)performAsyncRequestWithCompletion:(void (^)(NSDictionary *mergedData, NSError *error))completion;
+
++(NSMutableDictionary*)performAsyncRequestWithCompletionByJsonFile:(NSString*) file1 margeFile:(NSString*) file2;
+
++(NSDictionary*)checkUpdateDateFormat:(NSDictionary*) dateDict;
 @end
 
 NS_ASSUME_NONNULL_END
